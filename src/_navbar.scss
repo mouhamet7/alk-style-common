@@ -9,8 +9,11 @@
     }
 
     .logo {
-        margin: 12px 0;
         height: 36px;
+
+        margin-top: $padding-base-horizontal;
+        margin-bottom: $padding-base-horizontal;
+        margin-right: 2*$padding-base-horizontal;
     }
 
     .navbar-nav {
@@ -28,8 +31,8 @@
                     content: ' ';
                     position: absolute;
                     bottom: 0;
-                    left: 0;
-                    right: 0;
+                    left: 1px;
+                    right: 1px;
                     height: 3px;
                     background-color: $brand-primary;
                 }
