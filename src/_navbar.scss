@@ -1,37 +1,39 @@
-#corporate .navbar {
-    .navbar-nav {
-        display: inline-block;
-        float: none;
-    }
-    .navbar-collapse {
-        text-align: center;
-    }
-}
-
-.navbar .navbar-collapse {
-    height: 50px !important;
-}
-
 .nav {
     text-transform: uppercase;
 }
 
 .navbar {
-    .logo {
-        margin: 15px 0px 15px 0px;
-        max-width: 100%;
-        height: 20px;
+    .container-fluid {
+        padding-left: 30px;
+        padding-right: 30px;
     }
-    li {
-        cursor: pointer;
-    }
-}
 
-#documentation {
-    .main {
-        padding: 20px;
-        .page-header {
-            margin-top: 0;
+    .logo {
+        margin: 12px 0;
+        height: 36px;
+    }
+
+    .navbar-nav {
+        li {
+            cursor: pointer;
+
+            &:hover, &:active, &:focus, .active {
+                color: $brand-primary;
+
+                a {
+                    color: $brand-primary;
+                }
+
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 3px;
+                    background-color: $brand-primary;
+                }
+            }
         }
     }
 }
