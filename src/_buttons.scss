@@ -91,26 +91,44 @@
     }
 }
 
-.btn-secondary {
-    @include button-variant($brand-secondary, transparent, $brand-secondary);
+@mixin transparent-btn($color) {
+    @include button-variant($color, transparent, $color);
 
     &:hover {
-        background-color: $brand-primary-hover;
+        background-color: $color;
+        border-color: transparent;
+        color: white;
     }
 }
 
+.btn-secondary {
+    @include transparent-btn($brand-secondary);
+}
+
 .btn-success {
-    @include button-variant($brand-success, transparent, $brand-success);
+    @include transparent-btn($brand-success);
 }
 
 .btn-danger {
-    @include button-variant($brand-danger, transparent, $brand-danger);
+    @include transparent-btn($brand-danger);
 }
 
 .btn-warning {
-    @include button-variant($brand-warning, transparent, $brand-warning);
+    @include transparent-btn($brand-warning);
 }
 
 .btn-default {
-    @include button-variant($brand-default, transparent, $brand-default);
+    @include transparent-btn($brand-default);
+}
+
+.btn-highlight {
+    @include transparent-btn($brand-highlight);
+}
+
+.btn-highlight-secondary {
+    @include transparent-btn($brand-highlight-secondary);
+}
+
+.btn-inprogress {
+    @include transparent-btn($brand-inprogress);
 }

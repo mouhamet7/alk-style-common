@@ -11,12 +11,17 @@
     .logo {
         height: 36px;
 
+
         margin-top: $padding-base-horizontal;
         margin-bottom: $padding-base-horizontal;
         margin-right: 2*$padding-base-horizontal;
+
+        svg {
+            width: inherit;
+        }
     }
 
-    .navbar-nav {
+    ul.navbar-nav:not(.dropdown-menu) {
         li {
             cursor: pointer;
 
