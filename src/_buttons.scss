@@ -1,3 +1,13 @@
+@mixin transparent-btn($color) {
+    @include button-variant($color, transparent, $color);
+
+    &:hover {
+        background-color: $color;
+        border-color: transparent;
+        color: white;
+    }
+}
+
 .btn-default {
   &:hover, &:active {
     @include transition(background-color 0.3s 0 ease);
@@ -91,13 +101,10 @@
     }
 }
 
-@mixin transparent-btn($color) {
-    @include button-variant($color, transparent, $color);
 
+.btn-primary {
     &:hover {
-        background-color: $color;
-        border-color: transparent;
-        color: white;
+        background-color: $brand-primary-hover;
     }
 }
 

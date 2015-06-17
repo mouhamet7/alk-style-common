@@ -32,7 +32,6 @@ $brand-primary-80:      rgba($brand-primary, .8);
 $brand-primary-60:      rgba($brand-primary, .6);
 $brand-primary-40:      rgba($brand-primary, .4);
 
-$brand-info:            #5bc0de !default;
 $brand-brillant:        rgb(255, 255, 0);
 $brand-deprecated:      rgb(165, 154, 103);
 $brand-stream:          $brand-primary;
@@ -72,15 +71,26 @@ $icon-gray-active: rgba($gray-light, .85);
 
 $alk-icon-color: rgba(94, 172, 37, 0.25);
 
-.btn-primary {
-    &:hover {
-        background-color: $brand-primary-hover;
-    }
-}
-
 // =================================================================================================
 //                                          BASE COLORS
 // =================================================================================================
+
+@mixin color-inverse($color) {
+    background-color: $color !important;
+    color: white;
+}
+
+.color-secondary-inverse {
+    @include color-inverse($brand-secondary);
+}
+
+.color-info-inverse {
+    @include color-inverse($brand-info);
+}
+
+.color-warning-inverse {
+    @include color-inverse($brand-warning);
+}
 
 .color-red {
     color: $alk-red;
@@ -175,14 +185,6 @@ $alk-icon-color: rgba(94, 172, 37, 0.25);
 
 .color-debug-inverse {
     @extend .color-blue-inverse;
-}
-
-.color-warning-inverse {
-    @extend .color-yellow-inverse;
-}
-
-.color-info-inverse {
-    @extend .color-darkgreen-inverse;
 }
 
 .color-success-inverse {
