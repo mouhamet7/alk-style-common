@@ -15,13 +15,14 @@ $gray-light:             #B8B8B8;
 $gray-lighter:           #ECECEC;
 
 $brand-primary:         #3FA2B2;
+$brand-secondary:       #166a83;
+
 $brand-success:         #48B071;
-$brand-info:            $gray-darker;
+$brand-info:            $brand-secondary;
 $brand-default:         $gray-darker;
 $brand-warning:         #e64c42;
 $brand-danger:          #e64c42;
 
-$brand-secondary:       #166a83;
 $brand-inprogress:      #C69C5D;
 $brand-highlight:       #FABF2D;
 $brand-highlight-secondary: #EF7E1D;
@@ -68,8 +69,6 @@ $alk-purple-light-active: rgba($alk-purple, 0.25);
 $icon-gray: $gray;
 $icon-gray-hover: rgba($gray-light, .7);
 $icon-gray-active: rgba($gray-light, .85);
-
-$alk-icon-color: rgba(94, 172, 37, 0.25);
 
 // =================================================================================================
 //                                          BASE COLORS
