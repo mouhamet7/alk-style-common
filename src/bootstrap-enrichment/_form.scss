@@ -1,0 +1,106 @@
+/**
+* Mixins for styling elements
+*/
+
+$form-input-color: $brand-primary;
+
+label {
+    font-weight: normal;
+}
+
+@mixin form-checkbox-box($color) {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    @include form-checkbox-color($color);
+}
+
+@mixin form-checkbox-tick($color) {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: "";
+    width: 7px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    @include form-checkbox-color($color);
+}
+
+@mixin form-checkbox-color($color) {
+    border-color: $color;
+}
+
+/** Input styles with an adjacent label
+*  Usage:
+* <input type="checkbox" class="form-checkbox" id="myinput" /><label for="myinput">My label</label>
+*
+*/
+
+input[type="checkbox"].form-checkbox {
+    display: none;
+    & + label {
+        position:relative;
+        padding-left: 20px;
+        margin: 0;
+        &:before {
+            @include form-checkbox-box($form-input-color);
+        }
+        &:after {
+            @include form-checkbox-tick($form-input-color);
+        }
+    }
+    &:checked + label:after {
+        display: block;
+    }
+
+    /* white layout */
+    &.white + label {
+        &:before {
+            @include form-checkbox-color(#fff);
+        }
+        &:after {
+            @include form-checkbox-color(#fff);
+        }
+    }
+}
+
+/** Input styles as item list with icon
+*  Usage:
+* <ul class="form-checkbox-list">
+*   <li><input type="checkbox" class="form-checkbox" id="myinput" /><label for="myinput">My label</label></li>
+*   <li><input type="checkbox" class="form-checkbox" id="myinput2" /><label for="myinput2">My label 2</label></li>
+* </ul>
+*
+*/
+
+ul.form-radio-list {
+    li {
+        > input {
+            display: none;
+        }
+        > label {
+            display: block;
+            font-size: $font-size-large;
+            font-weight: normal;
+            padding: 5px 25px;
+        }
+        > input:checked + label {
+            position: relative;
+            z-index: 1;
+            background: #f3ece1;
+            background: repeating-linear-gradient(to bottom right, #f3ece1, #f3ece1 33%, #e3ddd5 33%, #e3ddd5 66%, #f3ece1 66%, #f3ece1);
+            background-size: 3px 3px;
+            border: #e6d5ba 1px solid;
+        }
+    }
+}

@@ -1,90 +1,66 @@
-.btn-default {
-  &:hover, &:active {
-    @include transition(background-color 0.3s 0 ease);
-
-    background-color: $brand-success;
-    border-color: $brand-success;
-    color: white;
-
-    a {
-      color: white;
-    }
-  }
-}
-
-.btn-stream-light {
-    @include transition(background-color 0.3s 0 ease);
-    background-color: $alk-green-light !important;
-    color: white !important;
-    z-index: 1000;
-
-    * {
-        color: white !important;
-    }
-
-    &:hover {
-        background-color: $alk-green-light-hover !important;
-    }
-
-    &:active {
-        background-color: $alk-green-light-active !important;
-    }
-}
-
-.btn-stream {
-    @include transition(background-color 0.3s 0 ease);
-    background-color: $alk-green !important;
-    color: white !important;
-    z-index: 1000;
-
-    * {
-        color: white !important;
-    }
-
-    &:hover {
-        background-color: $alk-green-hover !important;
-    }
-
-    &:active {
-        background-color: $alk-green-active !important;
-    }
-}
-
-.btn-stream-inverse {
-    @include transition(background-color 0.3s 0 ease);
-    background-color: transparent !important;
-    color: $alk-green !important;
-    z-index: 1000;
-
-    * {
-        color: $alk-green !important;
-    }
-
-    &:hover {
-        color: $alk-green-hover !important;
-    }
-
-    &:active {
-        color: $alk-green-active !important;
-    }
-}
-
-.btn-gray {
-    @include transition(background-color 0.3s 0 ease);
-    background-color: $gray-light !important;
-    border: none;
-    color: white !important;
-    z-index: 1000;
+@mixin transparent-btn($color) {
+    @include button-variant($color, transparent, $color);
 
     i {
-        color: white !important;
+        color: $color;
+        vertical-align: middle;
+
+        &:hover {
+            color: white;
+        }
     }
 
     &:hover {
-        background-color: $alk-green !important;
+        background-color: $color;
+        border-color: transparent;
+        color: white;
     }
+}
 
-    &:active {
-        background-color: $alk-green !important;
+.btn {
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
     }
+}
+
+.btn-primary {
+    &:hover {
+        background-color: $brand-primary-hover;
+    }
+}
+
+.btn-secondary {
+    @include transparent-btn($brand-secondary);
+}
+
+.btn-success {
+    @include transparent-btn($brand-success);
+}
+
+.btn-danger {
+    @include transparent-btn($brand-danger);
+}
+
+.btn-warning {
+    @include transparent-btn($brand-warning);
+}
+
+.btn-default {
+    @include transparent-btn($brand-default);
+}
+
+.btn-highlight {
+    @include transparent-btn($brand-highlight);
+}
+
+.btn-highlight-secondary {
+    @include transparent-btn($brand-highlight-secondary);
+}
+
+.btn-inprogress {
+    @include transparent-btn($brand-inprogress);
 }
