@@ -9,11 +9,10 @@
     }
 
     .logo {
-        height: 36px;
+        height: $font-size-h2;
 
-
-        margin-top: $padding-base-horizontal;
-        margin-bottom: $padding-base-horizontal;
+        margin-top: ($navbar-height - $font-size-h2) / 2;
+        margin-bottom: ($navbar-height - $font-size-h2) / 2;
         margin-right: 2*$padding-base-horizontal;
 
         svg {
