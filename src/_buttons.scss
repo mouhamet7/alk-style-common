@@ -1,6 +1,15 @@
 @mixin transparent-btn($color) {
     @include button-variant($color, transparent, $color);
 
+    i {
+        color: $color;
+        vertical-align: middle;
+
+        &:hover {
+            color: white;
+        }
+    }
+
     &:hover {
         background-color: $color;
         border-color: transparent;
