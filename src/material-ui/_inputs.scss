@@ -9,6 +9,10 @@
             border-color: $brand-danger;
         }
     }
+
+    .radio {
+        color: $text-color;
+    }
 }
 
 .has-warning {
@@ -18,6 +22,10 @@
             border-color: $brand-warning;
         }
     }
+
+    .radio {
+        color: $text-color;
+    }
 }
 
 .has-success {
@@ -26,5 +34,9 @@
         &:not(.ng-pristine) {
             border-color: $brand-success;
         }
+    }
+
+    .radio, .radio-inline {
+        color: $text-color;
     }
 }
