@@ -13,6 +13,7 @@ $gray-dark:              #3C3C3B;
 $gray:                   #555555;
 $gray-light:             #B8B8B8;
 $gray-lighter:           #ECECEC;
+$gray-lightest:          #F5F5F5;
 
 $brand-primary:         #3FA2B2;
 $brand-secondary:       #166a83;
@@ -98,6 +99,18 @@ $icon-gray-active: rgba($gray-light, .85);
 
 .color-secondary-menu-inverse {
     @include color-inverse($brand-secondary-menu);
+}
+
+.color-gray-light {
+    color: $gray-light;
+}
+
+.color-gray-lighter {
+    color: $gray-lighter;
+}
+
+.color-gray-lightest {
+    color: $gray-lightest;
 }
 
 .color-red {
