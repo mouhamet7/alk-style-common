@@ -17,6 +17,11 @@ $gray-lighter:           #ECECEC;
 $brand-primary:         #3FA2B2;
 $brand-secondary:       #166a83;
 
+$brand-secondary-menu:  #146984;
+$brand-secondary-submenu: #185f75;
+$brand-secondary-mainmenu:  #1c4754;
+
+
 $brand-success:         #48B071;
 $brand-info:            $brand-secondary;
 $brand-default:         $gray-darker;
@@ -89,6 +94,10 @@ $icon-gray-active: rgba($gray-light, .85);
 
 .color-warning-inverse {
     @include color-inverse($brand-warning);
+}
+
+.color-secondary-menu-inverse {
+    @include color-inverse($brand-secondary-menu);
 }
 
 .color-red {
