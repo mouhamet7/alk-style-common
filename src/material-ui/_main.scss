@@ -14,6 +14,10 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+    font-weight: 300;
+}
+
 // Checkboxes
 @import "../bower_components/alk-style-common/bower_components/bootstrap-material-design/sass/checkboxes";
 
@@ -25,6 +29,14 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 legend {
     border-bottom: 0;
+}
+
+.mdi, .fa {
+    cursor: pointer;
+
+    &.non-clickable {
+        cursor: default;
+    }
 }
 
 .modal-content {
