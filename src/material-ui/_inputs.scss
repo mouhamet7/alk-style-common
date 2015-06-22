@@ -3,11 +3,9 @@
 }
 
 .has-error {
+    @include form-control-validation($brand-danger, $brand-danger, transparent);
     .form-control {
-        border-color: $text-color;
-        &:not(.ng-pristine) {
-            border-color: $brand-danger;
-        }
+        border-color: $brand-danger;
     }
 
     .radio {
@@ -16,8 +14,11 @@
 }
 
 .has-warning {
+    @include form-control-validation($brand-warning, $brand-warning, transparent);
+
     .form-control {
         border-color: $text-color;
+
         &:not(.ng-pristine) {
             border-color: $brand-warning;
         }
@@ -29,8 +30,11 @@
 }
 
 .has-success {
+    @include form-control-validation($brand-success, $brand-success, transparent);
+
     .form-control {
         border-color: $text-color;
+
         &:not(.ng-pristine) {
             border-color: $brand-success;
         }
@@ -39,4 +43,14 @@
     .radio, .radio-inline {
         color: $text-color;
     }
+}
+
+.has-success, .has-error, .has-warning {
+    .help-block {
+        opacity: .4;
+    }
+}
+
+.form-group.has-success .control-label {
+    color: $text-color;
 }
