@@ -33,7 +33,8 @@ $brand-inprogress:      #C69C5D;
 $brand-highlight:       #FABF2D;
 $brand-highlight-secondary: #EF7E1D;
 
-$brand-primary-hover:   #3e8e9a;
+$brand-primary-hover:   #b2dae0;
+$brand-primary-active:   #8cc7d1;
 
 $brand-primary-80:      rgba($brand-primary, .8);
 $brand-primary-60:      rgba($brand-primary, .6);
@@ -42,6 +43,10 @@ $brand-primary-40:      rgba($brand-primary, .4);
 $brand-brillant:        rgb(255, 255, 0);
 $brand-deprecated:      rgb(165, 154, 103);
 $brand-stream:          $brand-primary;
+
+$alk-certified: #45b26e;
+$alk-accepted: #c79d59;
+$alk-attributed: #e74c3c;
 
 $alk-red: rgb(227, 37, 34);
 $alk-green: $brand-success;
