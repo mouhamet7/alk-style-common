@@ -54,3 +54,27 @@
 .form-group.has-success .control-label {
     color: $text-color;
 }
+
+.input-group-addon {
+    background-color: transparent;
+}
+
+select, .input-group select, .input-group select.form-control {
+    background: transparent;
+    padding: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $text-color;
+    background: url(../images/icons/chevron-down.png) no-repeat right transparent;
+    line-height: 1;
+    padding-right: 30px;
+    -webkit-appearance: none;
+}
+
+.full-width {
+    select, .input-group select, .input-group select.form-control {
+        width: auto !important;
+        min-width: 24px;
+    }
+}
