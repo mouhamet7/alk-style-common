@@ -44,9 +44,10 @@ $brand-brillant:        rgb(255, 255, 0);
 $brand-deprecated:      rgb(165, 154, 103);
 $brand-stream:          $brand-primary;
 
-$alk-certified: #45b26e;
-$alk-accepted: #c79d59;
-$alk-attributed: #e74c3c;
+$alk-certified: $brand-success;
+$alk-accepted: $brand-inprogress;
+$alk-attributed: $brand-danger;
+$alk-discontinued: $gray-light;
 
 $alk-red: rgb(227, 37, 34);
 $alk-green: $brand-success;
