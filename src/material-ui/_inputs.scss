@@ -2,6 +2,10 @@
     box-shadow: none !important;
 }
 
+.radio > label, .radio-inline {
+    padding-left: 0 !important;
+}
+
 .has-error {
     @include form-control-validation($brand-danger, $brand-danger, transparent);
     .form-control {
