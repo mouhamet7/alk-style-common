@@ -2,6 +2,10 @@
     box-shadow: none !important;
 }
 
+.radio > label, .radio-inline {
+    padding-left: 0 !important;
+}
+
 .has-error {
     @include form-control-validation($brand-danger, $brand-danger, transparent);
     .form-control {
@@ -68,8 +72,18 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     border-bottom: 1px solid $text-color;
     background: url(../images/icons/chevron-down.png) no-repeat right transparent;
     line-height: 1;
+    min-width: 40px;
+
     padding-right: 30px;
+    &:focus {
+        padding-right: 30px;
+        background: url(../images/icons/chevron-down.png) no-repeat right transparent;
+    }
+
     -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 
 .full-width {
