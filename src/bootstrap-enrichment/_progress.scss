@@ -1,4 +1,12 @@
-.progress.progress--small {
-    margin: 8px 0;
-    height: 5px;
+.progress {
+    &.progress--small {
+        margin: 8px 0;
+        height: 5px;
+    }
+    .progress-bar {
+        background: $brand-warning;
+    }
+}
+.progress-label {
+    color: $brand-warning;
 }
