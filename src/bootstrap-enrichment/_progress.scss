@@ -4,9 +4,15 @@
         height: 5px;
     }
     .progress-bar {
-        background: $brand-warning;
+        background: $gray-light;
+        &.invalid {
+            background: $brand-warning;
+        }
     }
 }
 .progress-label {
-    color: $brand-warning;
+  color: #000;
+  &.invalid {
+      color: $brand-danger;
+  }
 }
