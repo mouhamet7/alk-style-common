@@ -58,13 +58,12 @@
 }
 
 select, .input-group select, .input-group select.form-control, .form-inline select {
-    background: transparent;
     padding: 0;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid $text-color;
-    background: url(../images/icons/chevron-down.png) no-repeat right transparent;
+    border-bottom: 1px solid $text-color !important;
+    background: url(../images/icons/chevron-down.png) no-repeat right transparent !important;
     line-height: 1;
     min-width: 40px;
 
