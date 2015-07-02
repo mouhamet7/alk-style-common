@@ -134,6 +134,16 @@ input[type="radio"].form-radio {
 *
 */
 
+$form-radio-list-border-color: #e6d5ba;
+$form-radio-list-gradient-color1: #f3ece1;
+$form-radio-list-gradient-color2: #e3ddd5;
+$form-radio-list-itemHeight: 50px;
+$form-radio-list-itemPadding: 30px;
+$form-radio-list-submenu-itemHeight: $form-radio-list-itemHeight/2;
+$form-radio-list-submenu-border-color: #e6d5ba;
+$form-radio-list-submenu-gradient-color1: rgba(#f3ece1, 0.4);
+$form-radio-list-submenu-gradient-color2: rgba(#e3ddd5, 0.4);
+
 ul.form-radio-list {
     padding: 0;
     > li {
@@ -147,22 +157,43 @@ ul.form-radio-list {
             display: block;
             font-size: $font-size-large;
             font-weight: normal;
-            padding: 0 0 0 60px;
-            min-height: 24px;
-            line-height: 24px;
+            padding: 1px 0 1px $form-radio-list-itemPadding*2;
+            min-height: $form-radio-list-submenu-itemHeight;
+            line-height: $form-radio-list-submenu-itemHeight - 2px;
+            margin: 0;
         }
         > label {
-            min-height: 48px;
-            line-height: 48px;
-            padding-left: 30px;
+            min-height: $form-radio-list-itemHeight;
+            line-height: $form-radio-list-itemHeight - 2px;
+            padding-left: $form-radio-list-itemPadding;
         }
         input:checked + label {
             position: relative;
+            padding: 0 0 0 ($form-radio-list-itemPadding*2-1);
             z-index: 1;
-            background: #f3ece1;
-            background: repeating-linear-gradient(to bottom right, #f3ece1, #f3ece1 33%, #e3ddd5 33%, #e3ddd5 66%, #f3ece1 66%, #f3ece1);
+            background: $form-radio-list-submenu-gradient-color1;
+            background: repeating-linear-gradient(to bottom right,
+            $form-radio-list-submenu-gradient-color1,
+            $form-radio-list-submenu-gradient-color1 33%,
+            $form-radio-list-submenu-gradient-color2 33%,
+            $form-radio-list-submenu-gradient-color2 66%,
+            $form-radio-list-submenu-gradient-color1 66%,
+            $form-radio-list-submenu-gradient-color1);
             background-size: 3px 3px;
-            border: #e6d5ba 1px solid;
+            border: $form-radio-list-submenu-border-color 1px solid;
+        }
+        > input:checked + label {
+            padding: 0 0 0 ($form-radio-list-itemPadding - 1);
+            background: $form-radio-list-gradient-color1;
+            background: repeating-linear-gradient(to bottom right,
+            $form-radio-list-gradient-color1,
+            $form-radio-list-gradient-color1 33%,
+            $form-radio-list-gradient-color2 33%,
+            $form-radio-list-gradient-color2 66%,
+            $form-radio-list-gradient-color1 66%,
+            $form-radio-list-gradient-color1);
+            background-size: 3px 3px;
+            border: $form-radio-list-border-color 1px solid;
         }
     }
 }
