@@ -135,23 +135,34 @@ input[type="radio"].form-radio {
 */
 
 ul.form-radio-list {
-    li {
-        > input {
+    padding: 0;
+    > li {
+        ul {
+            padding: 0;
+        }
+        input {
             display: none;
         }
-        > label {
+        label {
             display: block;
             font-size: $font-size-large;
             font-weight: normal;
-            padding: 5px 25px;
+            padding: 0 0 0 60px;
+            min-height: 24px;
+            line-height: 24px;
         }
-        > input:checked + label {
+        > label {
+            min-height: 48px;
+            line-height: 48px;
+            padding-left: 30px;
+        }
+        input:checked + label {
             position: relative;
             z-index: 1;
             background: #f3ece1;
             background: repeating-linear-gradient(to bottom right, #f3ece1, #f3ece1 33%, #e3ddd5 33%, #e3ddd5 66%, #f3ece1 66%, #f3ece1);
             background-size: 3px 3px;
-            // border: #e6d5ba 1px solid;
+            border: #e6d5ba 1px solid;
         }
     }
 }
