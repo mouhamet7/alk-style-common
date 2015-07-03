@@ -1,0 +1,14 @@
+.additional-actions {
+    display: inline-block;
+    font-size: $font-size-h3;
+    list-style: none;
+
+    > a, > a:hover {
+        text-decoration: none;
+    }
+
+    li {
+        cursor: pointer;
+        padding: $padding-base-vertical $padding-base-horizontal;
+    }
+}
