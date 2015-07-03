@@ -19,6 +19,10 @@ h1, h2, .h1, .h2 {
     font-weight: 100;
 }
 
+th {
+    font-weight: 500;
+}
+
 // Checkboxes
 @import "../bower_components/alk-style-common/bower_components/bootstrap-material-design/sass/checkboxes";
 
