@@ -1,0 +1,18 @@
+.progress {
+    &.progress--small {
+        margin: 8px 0;
+        height: 5px;
+    }
+    .progress-bar {
+        background: $gray-light;
+        &.invalid {
+            background: $brand-warning;
+        }
+    }
+}
+.progress-label {
+  color: #000;
+  &.invalid {
+      color: $brand-danger;
+  }
+}

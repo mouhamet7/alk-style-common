@@ -12,7 +12,8 @@ $padding-box-tile: $padding-base-horizontal;
 
 .box-tile {
   behavior: url(src/common/css3pie/PIE.htc);
-  @extend .basic-shadow;
+  @extend .shadow-z-1;
+  border-radius: 2px;
   background-color: white;
-  padding: $padding-base-horizontal;
+  padding: $padding-base-vertical $padding-base-horizontal;
 }

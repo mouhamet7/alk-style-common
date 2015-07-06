@@ -1,0 +1,199 @@
+/**
+* Mixins for styling elements
+*/
+
+$form-input-color: $brand-primary;
+
+label {
+    font-weight: 300;
+}
+
+@mixin form-checkbox-box($color) {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin-right: 10px;
+    @include form-checkbox-color($color);
+}
+
+@mixin form-checkbox-tick($color) {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: "";
+    width: 7px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    @include form-checkbox-color($color);
+}
+
+@mixin form-radio-box($color) {
+    border-radius: 50% !important;
+    @include form-checkbox-box($color);
+}
+
+@mixin form-radio-tick($color) {
+    display: none;
+    position: absolute;
+    top: 6px;
+    left: 3px;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: $color;
+}
+
+@mixin form-checkbox-color($color) {
+    border-color: $color;
+}
+
+/** Input styles with an adjacent label
+*  Usage:
+* <input type="checkbox" class="form-checkbox" id="myinput" /><label for="myinput">My label</label>
+*
+*/
+
+input[type="checkbox"].form-checkbox {
+    display: none;
+    & + label {
+        position:relative;
+        padding-left: 20px;
+        margin: 0;
+        &:before {
+            @include form-checkbox-box($form-input-color);
+        }
+        &:after {
+            @include form-checkbox-tick($form-input-color);
+        }
+    }
+    &:checked + label:after {
+        display: block;
+    }
+
+    /* white layout */
+    &.white + label {
+        &:before {
+            @include form-checkbox-color(#fff);
+        }
+        &:after {
+            @include form-checkbox-color(#fff);
+        }
+    }
+}
+
+/** Input styles with an adjacent label
+*  Usage:
+* <input type="radio" class="form-radio" id="myinput" /><label for="myinput">My label</label>
+*
+*/
+
+input[type="radio"].form-radio {
+    display: none;
+    & + label {
+        position:relative;
+        padding-left: 20px;
+        margin: 0;
+        &:before {
+            @include form-radio-box($form-input-color);
+        }
+        &:after {
+            @include form-radio-tick($form-input-color);
+        }
+    }
+    &:checked + label:after {
+        display: block;
+    }
+
+    /* white layout */
+    &.white + label {
+        &:before {
+            @include form-checkbox-color(#fff);
+        }
+        &:after {
+            @include form-checkbox-color(#fff);
+        }
+    }
+}
+
+/** Input styles as item list with icon
+*  Usage:
+* <ul class="form-checkbox-list">
+*   <li><input type="checkbox" class="form-checkbox" id="myinput" /><label for="myinput">My label</label></li>
+*   <li><input type="checkbox" class="form-checkbox" id="myinput2" /><label for="myinput2">My label 2</label></li>
+* </ul>
+*
+*/
+
+$form-radio-list-border-color: #e6d5ba;
+$form-radio-list-gradient-color1: #f3ece1;
+$form-radio-list-gradient-color2: #e3ddd5;
+$form-radio-list-itemHeight: 40px;
+$form-radio-list-itemPadding: 30px;
+$form-radio-list-submenu-itemHeight: $form-radio-list-itemHeight/2;
+$form-radio-list-submenu-border-color: #e6d5ba;
+$form-radio-list-submenu-gradient-color1: rgba(#f3ece1, 0.4);
+$form-radio-list-submenu-gradient-color2: rgba(#e3ddd5, 0.4);
+
+ul.form-radio-list {
+    padding: 0;
+    > li {
+        ul {
+            padding: 0;
+        }
+        input {
+            display: none;
+        }
+        label {
+            display: block;
+            font-size: $font-size-large;
+            font-weight: 300;
+            padding: 1px 0 1px $form-radio-list-itemPadding*2;
+            min-height: $form-radio-list-submenu-itemHeight;
+            line-height: $form-radio-list-submenu-itemHeight - 2px;
+            margin: 0;
+        }
+        > label {
+            min-height: $form-radio-list-itemHeight;
+            line-height: $form-radio-list-itemHeight - 2px;
+            padding-left: $form-radio-list-itemPadding;
+        }
+        input:checked + label {
+            position: relative;
+            padding: 0 0 0 ($form-radio-list-itemPadding*2-1);
+            z-index: 1;
+            background: $form-radio-list-submenu-gradient-color1;
+            background: repeating-linear-gradient(to bottom right,
+            $form-radio-list-submenu-gradient-color1,
+            $form-radio-list-submenu-gradient-color1 33%,
+            $form-radio-list-submenu-gradient-color2 33%,
+            $form-radio-list-submenu-gradient-color2 66%,
+            $form-radio-list-submenu-gradient-color1 66%,
+            $form-radio-list-submenu-gradient-color1);
+            background-size: 3px 3px;
+            border: $form-radio-list-submenu-border-color 1px solid;
+        }
+        > input:checked + label {
+            padding: 0 0 0 ($form-radio-list-itemPadding - 1);
+            background: $form-radio-list-gradient-color1;
+            background: repeating-linear-gradient(to bottom right,
+            $form-radio-list-gradient-color1,
+            $form-radio-list-gradient-color1 33%,
+            $form-radio-list-gradient-color2 33%,
+            $form-radio-list-gradient-color2 66%,
+            $form-radio-list-gradient-color1 66%,
+            $form-radio-list-gradient-color1);
+            background-size: 3px 3px;
+            border: $form-radio-list-border-color 1px solid;
+        }
+    }
+}
