@@ -2,4 +2,8 @@
     font-size: 20px;
     vertical-align: middle;
     width: 20px;
+
+    svg {
+        max-height: 20px; // Fix IE 11 display
+    }
 }
