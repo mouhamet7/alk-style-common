@@ -1,6 +1,7 @@
 .additional-actions {
+    border-bottom: 1px solid $brand-primary;
     display: inline-block;
-    font-size: $font-size-h3;
+    font-size: $font-size-h2;
     list-style: none;
 
     > a, > a:hover {
@@ -10,5 +11,18 @@
     li {
         cursor: pointer;
         padding: $padding-base-vertical $padding-base-horizontal;
+
+        &:hover {
+            background-color: $brand-primary-hover;
+        }
+
+        &:active {
+            background-color: $brand-primary-active;
+            color: white;
+        }
+    }
+
+    .dropdown-menu {
+        top: 0;
     }
 }
