@@ -1,11 +1,13 @@
 .additional-actions {
-    border-bottom: 1px solid $brand-primary;
+    border-bottom: 1px solid $brand-secondary;
+    color: $brand-secondary;
     display: inline-block;
     font-size: $font-size-h2;
     list-style: none;
 
     > a, > a:hover {
         text-decoration: none;
+        color: $brand-secondary;
     }
 
     li {
@@ -13,11 +15,11 @@
         padding: $padding-base-vertical $padding-base-horizontal;
 
         &:hover {
-            background-color: $brand-primary-hover;
+            background-color: $brand-secondary-hover;
         }
 
         &:active {
-            background-color: $brand-primary-active;
+            background-color: $brand-secondary;
             color: white;
         }
     }
