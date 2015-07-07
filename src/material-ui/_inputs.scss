@@ -21,7 +21,7 @@
     @include form-control-validation($brand-warning, $brand-warning, transparent);
 
     .form-control {
-        border-color: $text-color;
+        border-color: $input-border-color;
 
         &:not(.ng-pristine) {
             border-color: $brand-warning;
@@ -37,7 +37,7 @@
     @include form-control-validation($brand-success, $brand-success, transparent);
 
     .form-control {
-        border-color: $text-color;
+        border-color: $input-border-color;
 
         &:not(.ng-pristine) {
             border-color: $brand-success;
@@ -62,7 +62,7 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid $text-color !important;
+    border-bottom: 1px solid $input-border-color !important;
     background: url(../images/icons/chevron-down.png) no-repeat right transparent !important;
     line-height: 1;
     min-width: 40px;
@@ -83,5 +83,23 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     select, .input-group select, .input-group select.form-control {
         width: auto !important;
         min-width: 24px;
+    }
+}
+
+fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-control {
+    &, &:focus, &.focus {
+        &:not(textarea) {
+            height: 28px;
+        }
+        padding: 0;
+        float: none;
+        border: 0;
+        box-shadow: none;
+        border-radius: 0;
+        background: transparent;
+        border-bottom: 1px solid $input-border-color;
+        &:disabled {
+            border-style: dashed;
+        }
     }
 }

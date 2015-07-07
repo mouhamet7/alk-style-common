@@ -149,7 +149,7 @@ $table-bg-hover:                $brand-primary;
 $table-bg-active:               $table-bg-hover;
 
 //** Border color for table and cell borders.
-$table-border-color:            #ddd;
+$table-border-color:            $input-border-color;
 
 
 //== Buttons
@@ -197,7 +197,7 @@ $input-bg-disabled:              $gray-lighter;
 //** Text color for `<input>`s
 $input-color:                    $gray;
 //** `<input>` border color
-$input-border:                   #ccc;
+$input-border:                   $input-border-color;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
