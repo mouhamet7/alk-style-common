@@ -1,10 +1,11 @@
-.recipient-bar {
-    @extend .form-control;
+span.recipient-bar {
     display: flex;
     flex-wrap: wrap;
-    height: auto;
     padding-top: 0.5em 0.5em 0 0.5em;
     padding-bottom: 0;
+    &.form-control {
+        height: auto;
+    }
     > .recipient-bar-tag {
         display: flex;
         color: #fff;
