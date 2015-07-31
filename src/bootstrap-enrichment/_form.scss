@@ -137,12 +137,12 @@ input[type="radio"].form-radio {
 $form-radio-list-border-color: #e6d5ba;
 $form-radio-list-gradient-color1: #f3ece1;
 $form-radio-list-gradient-color2: #e3ddd5;
-$form-radio-list-itemHeight: 40px;
+$form-radio-list-itemHeight: 30px;
 $form-radio-list-itemPadding: 30px;
-$form-radio-list-submenu-itemHeight: $form-radio-list-itemHeight/2;
+$form-radio-list-submenu-itemHeight: 2*$form-radio-list-itemHeight/3;
 $form-radio-list-submenu-border-color: #e6d5ba;
-$form-radio-list-submenu-gradient-color1: rgba(#f3ece1, 0.4);
-$form-radio-list-submenu-gradient-color2: rgba(#e3ddd5, 0.4);
+$form-radio-list-submenu-gradient-color1: rgba(#f3ece1, 0.6);
+$form-radio-list-submenu-gradient-color2: rgba(#e3ddd5, 0.6);
 
 ul.form-radio-list {
     padding: 0;
@@ -180,7 +180,7 @@ ul.form-radio-list {
             $form-radio-list-submenu-gradient-color1 66%,
             $form-radio-list-submenu-gradient-color1);
             background-size: 3px 3px;
-            border: $form-radio-list-submenu-border-color 1px solid;
+            // border: $form-radio-list-submenu-border-color 1px solid;
         }
         > input:checked + label {
             padding: 0 0 0 ($form-radio-list-itemPadding - 1);
