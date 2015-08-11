@@ -17,3 +17,19 @@ $padding-box-tile: $padding-base-horizontal;
   background-color: white;
   padding: $padding-base-vertical $padding-base-horizontal;
 }
+
+.lateral-shadow {
+    z-index: 1;
+
+    &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: #ECECEC;
+        box-shadow: rgba(184, 184, 184, 0.5) 1px 0 3px;
+    }
+}
