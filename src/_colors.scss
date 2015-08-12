@@ -14,6 +14,7 @@ $gray:                   #555555;
 $gray-light:             #B8B8B8;
 $gray-lighter:           #ECECEC;
 $gray-lightest:          #F5F5F5;
+$gray-lightest-2:        #FBFBFB;
 
 $brand-primary:         #3FA2B2;
 $brand-secondary:       #166a83;
@@ -51,9 +52,11 @@ $brand-brillant:        rgb(255, 255, 0);
 $brand-deprecated:      rgb(165, 154, 103);
 $brand-stream:          $brand-primary;
 
+$alk-total: $brand-primary;
 $alk-certified: $brand-success;
 $alk-accepted: $brand-inprogress;
 $alk-attributed: $brand-danger;
+$alk-not-attributed: $brand-danger;
 $alk-discontinued: $gray-light;
 
 $alk-red: rgb(227, 37, 34);
