@@ -1,0 +1,140 @@
+$list-and-details-height: 600px;
+
+.list-and-details {
+    @extend .row;
+    @extend .row-same-height;
+    @extend .row-full-height;
+
+    max-height: $list-and-details-height;
+
+    .list {
+        @extend .col-xs-3;
+        @extend .col-full-height;
+        @extend .col-top;
+        @extend .no-padding-right;
+        @extend .lateral-shadow;
+        max-height: $list-and-details-height;
+
+        > div {
+            @extend .box-tile;
+            @extend .no-padding-left;
+            @extend .no-padding-right;
+        }
+
+        .search {
+            @extend .row;
+            padding: 2 * $padding-base-vertical $grid-gutter-width/2;
+
+            .form-inline {
+                display: inline-block;
+                margin-right: $padding-base-horizontal;
+                width: 100%;
+
+                &.active {
+                    border-bottom: 1px solid $gray-light;
+
+                    input {
+                        width: 90%;
+                        display: inline-block;
+                    }
+                }
+
+                .form-group {
+                    display: inline;
+                    width: 100%;
+                }
+
+                input {
+                    transition: none;
+                    display: none;
+                    text-align: left;
+                }
+            }
+
+            .pull-right {
+                display: inline-block;
+            }
+
+            i {
+                text-align: center;
+
+                + i {
+                    padding-left: 4px;
+                    padding-right: $padding-base-horizontal;
+                }
+            }
+
+            .form-control {
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+                box-shadow: none;
+                font-size: 16px;
+            }
+        }
+
+        .list-items {
+            height: 100%;
+            max-height: $list-and-details-height;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .list-item {
+            @extend .row;
+            cursor: pointer;
+            margin-left: -14px !important;
+            padding: $padding-base-vertical*1.7 $grid-gutter-width/2;
+
+            &:hover {
+                background-color: $brand-primary-hover;
+                color: $gray;
+
+                .details {
+                    color: $gray;
+                }
+            }
+
+            &.active {
+                background-color: $brand-primary-active;
+                color: white;
+
+                .details {
+                    color: white;
+                }
+            }
+
+            .name {
+                font-size: $font-size-h4;
+                vertical-align: middle;
+                font-weight: 500;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .details {
+                color: $gray-light;
+            }
+        }
+    }
+
+    .item-details {
+        @extend .col-xs-9;
+        @extend .col-full-height;
+        @extend .col-top;
+        @extend .box-tile;
+
+        .content-wrapper {
+            @extend .col-xs-12;
+            // @extend .col-full-height;
+
+            .content {
+                @extend .row;
+                // @extend .row-same-height;
+                // @extend .row-full-height;
+            }
+        }
+    }
+}
