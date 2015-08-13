@@ -1,0 +1,55 @@
+table.list {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-top: 1px solid $gray-lighter;
+  > thead {
+    th {
+      background: #fff;
+      color: $gray-light;
+      border-bottom: 1px solid $gray-lighter;
+      text-transform: uppercase;
+      font-size: $font-size-small;
+      font-weight: 300;
+    }
+  }
+  > tbody {
+    &:nth-child(odd) {
+      background: $gray-lightest;
+    }
+    > tr {
+      > td {
+        padding: 8px;
+        border: 0;
+      }
+      > td:first-child {
+        padding-left: 30px;
+      }
+      &.multiple-odd {
+        > td:first-child {
+          padding-left: 20px;
+          border-left: 10px solid $brand-primary;
+        }
+      }
+      &.multiple-even {
+        > td:first-child {
+          padding-left: 20px;
+          border-left: 10px solid #166a83;
+        }
+      }
+      &.active {
+        > td {
+          background: $brand-primary-active;
+          color: #fff;
+          .product-label {
+            color: $gray-lighter;
+          }
+        }
+      }
+      &:hover:not(.active) {
+        background: $brand-primary-hover;
+        transition: background 0.3s;
+      }
+    }
+  }
+}
