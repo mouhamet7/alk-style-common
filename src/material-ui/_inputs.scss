@@ -103,3 +103,7 @@ fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-con
         }
     }
 }
+
+.radio label span {
+  position: relative;
+}
