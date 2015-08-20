@@ -32,4 +32,19 @@
           text-decoration: none;
         }
     }
+
+    &.full-width {
+        display: block;
+        >a {
+            display: block;
+            text-align: left;
+            position: relative;
+
+            >.mdi {
+                position: absolute;
+                right: 1%;
+                top: 30%;
+            }
+        }
+    }
 }
