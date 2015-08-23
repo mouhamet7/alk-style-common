@@ -67,9 +67,12 @@
         background-color: $brand-primary;
         color: white;
         height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
 
         .action {
             color: white;
+            font-size: 30px;
         }
     }
 }
