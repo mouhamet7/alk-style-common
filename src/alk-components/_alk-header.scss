@@ -1,0 +1,78 @@
+.alk-header {
+    .main-header {
+        background-color: white;
+        height: 70px;
+    }
+
+    .navigation {
+        .nav-tabs {
+            background-color: $brand-secondary-submenu;
+            border: none;
+
+            > li {
+                margin-bottom: 0;
+
+                &.active {
+                    > a.nav-tab {
+                        background-color: white;
+                        color: white;
+                        overflow: hidden;
+
+                        &:after {
+                            @include rotate(45deg);
+                            content: ' ';
+                            position: absolute;
+                            bottom: -7px;
+                            left: 40%;
+                            background-color: $brand-primary;
+                            height: 12px;
+                            width: 12px;
+                        }
+                    }
+                }
+
+                > a.nav-tab {
+                    background-color: $brand-secondary-submenu;
+                    color: #9cdaed;
+                    text-transform: none;
+
+                }
+
+                &.main-menu {
+                    > a.nav-tab {
+                        background-color: $brand-secondary-mainmenu;
+                        color: white;
+                        margin-right: 20px;
+                        padding-right: $padding-large-horizontal;
+
+                        &:after {
+                            border-top: 20px solid transparent;
+                            border-bottom: 20px solid transparent;
+
+                            border-left: 20px solid $brand-secondary-mainmenu;
+                            content: "";
+                            height: 0;
+                            right: -18px;
+                            position: absolute;
+                            top: 0;
+                            width: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .actions {
+        background-color: $brand-primary;
+        color: white;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+
+        .action {
+            color: white;
+            font-size: 30px;
+        }
+    }
+}
