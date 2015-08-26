@@ -1,9 +1,9 @@
 // Font Awesome
-$fa-font-path: "/bower_components/font-awesome/fonts";
+$fa-font-path: "/styles/font-awesome/fonts";
 @import "font-awesome/scss/font-awesome";
 
 // Material design icons
-$mdi-font-path: "/bower_components/mdi/fonts";
+$mdi-font-path: "/styles/mdi/fonts";
 @import "mdi/scss/materialdesignicons.scss";
 
 // Bootstrap overriding
@@ -11,7 +11,7 @@ $mdi-font-path: "/bower_components/mdi/fonts";
 @import "variables";
 
 // Bootstrap
-@import "bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 
 @import "bootstrap-enrichment/additional-informations";
