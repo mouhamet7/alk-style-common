@@ -31,6 +31,10 @@
                     }
                 }
 
+                &.active.color-white > a.nav-tab:after {
+                    background-color: white;
+                }
+
                 > a.nav-tab {
                     background-color: $brand-secondary-submenu;
                     color: #9cdaed;
