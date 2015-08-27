@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap-material/sass/shadows";
+@import "../bower_components/bootstrap-material-design/sass/shadows";
 
 body {
     background-color: #EEEEEE;
@@ -24,13 +24,13 @@ th {
 }
 
 // Checkboxes
-@import "../node_modules/bootstrap-material/sass/checkboxes";
+@import "../bower_components/bootstrap-material-design/sass/checkboxes";
 
 // Radios
-@import "../node_modules/bootstrap-material/sass/radios";
+@import "../bower_components/bootstrap-material-design/sass/radios";
 
 // Text inputs
-@import "../node_modules/bootstrap-material/sass/inputs";
+@import "../bower_components/bootstrap-material-design/sass/inputs";
 
 legend {
     border-bottom: 0;
@@ -57,7 +57,7 @@ legend {
 }
 
 // Lists
-@import "../node_modules/bootstrap-material/sass/lists";
+@import "../bower_components/bootstrap-material-design/sass/lists";
 
 // // Navbar
 // @import "_navbar.scss";
@@ -116,6 +116,6 @@ legend {
     color: $brand-info;
 }
 
-@import "../node_modules/bootstrap-material/sass/tabs";
+@import "../bower_components/bootstrap-material-design/sass/tabs";
 
-@import "../node_modules/bootstrap-material/sass/popups";
+@import "../bower_components/bootstrap-material-design/sass/popups";
