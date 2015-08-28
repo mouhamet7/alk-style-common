@@ -5,8 +5,15 @@
     }
     .progress-bar {
         background: $gray-light;
+
         &.invalid {
             background: $brand-warning;
+        }
+
+    }
+    &.primary {
+        .progress-bar {
+            background-color: $brand-stream;
         }
     }
 }
