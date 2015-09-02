@@ -20,11 +20,14 @@
     "bootstrap-sass-official": "~3.3.1",
     "font-awesome": "~4.3.0",
     "bootstrap-material-design": "~0.3.0",
-    "mdi": "~1.1.34"
+    "mdi": "~1.1.34",
+    "md-date-time": "~0.0.14"
   },
   "resolutions": {
     "bootstrap-sass-official": "~3.3.1",
     "font-awesome": "~4.3.0",
     "mdi": "~1.1.34"
+  },
+  "devDependencies": {
   }
 }
