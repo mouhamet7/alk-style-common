@@ -1,0 +1,62 @@
+.time-date {
+
+	.display {
+		.title {
+			background-color: $brand-secondary; ;
+		}		
+
+		.content {
+			background-color: $brand-primary;
+		}
+	}
+
+	.control {
+		.slider {
+			.date-control {
+				padding-left: 10px;
+				padding-right: 10px;
+				background-color: white;
+
+				.month-part {
+					padding-left: 13px;
+				}
+
+				.days {
+					.day-cell.today {
+						color: $brand-secondary;
+					}
+
+					.day-cell.selected {
+						background-color: $brand-secondary;
+					}
+
+					.day-cell {
+						&:active {
+							background-color: $brand-primary;
+						}
+
+						&:hover {
+							background-color: $brand-primary;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.buttons {
+		background-color: white;
+		padding: 1.2rem;
+
+
+		md-button {
+			margin-left: 3px;
+			@extend .btn;
+			@extend .btn-secondary;
+
+			&:hover {
+				color: white;
+			}
+		}
+	}
+}
