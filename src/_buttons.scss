@@ -15,6 +15,16 @@
             color: white;
         }
     }
+
+    &.plain {
+        background-color: $color;
+        border-color: transparent;
+        color: white;
+
+        i {
+            color: white;
+        }
+    }
 }
 
 .btn {

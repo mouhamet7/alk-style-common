@@ -134,6 +134,18 @@ $icon-gray-active: rgba($gray-light, .85);
     @include color-inverse($body-bg);
 }
 
+.color-certified {
+    color: $brand-success;
+}
+
+.color-inprogress {
+    color: $brand-inprogress;
+}
+
+.color-attributed {
+    color: $alk-attributed;
+}
+
 .color-red {
     color: $alk-red;
 }
