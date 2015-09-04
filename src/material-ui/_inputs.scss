@@ -77,6 +77,18 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     -moz-appearance: none;
     text-indent: 0.01px;
     text-overflow: '';
+
+    &.disabled {
+        background: url(../images/icons/chevron-down-disabled.png) no-repeat right transparent !important;
+        border-bottom: 1px solid $input-border-color-disabled !important;
+    }
+}
+
+.select2-container-disabled {
+    .select2-choice {
+        background: url(../images/icons/chevron-down-disabled.png) no-repeat right transparent !important;
+        border-bottom: 1px solid $input-border-color-disabled !important;
+    }
 }
 
 .full-width {
