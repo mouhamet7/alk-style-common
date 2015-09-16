@@ -4,10 +4,18 @@
     display: inline-block;
     font-size: $font-size-h2;
     list-style: none;
+    .nav.nav-tabs & {
+        line-height: 40px;
+        font-size: $font-size-large;
+    }
 
     > a, > a:hover {
         text-decoration: none;
         color: $brand-secondary;
+        .nav.nav-tabs & {
+            color: #fff;
+            text-transform: initial;
+        }
     }
 
     li {
@@ -25,11 +33,34 @@
     }
 
     .dropdown-menu {
+        line-height: $line-height-base;
         top: 0;
         left: -20px;
         a, a:hover, a:active, a:link, a:focus {
           color: inherit;
           text-decoration: none;
+        }
+    }
+
+    div.dropdown-menu.grouped {
+        text-transform: initial;
+        div.group {
+            padding: $padding-base-vertical $padding-base-horizontal 0 $padding-base-horizontal;
+            ul {
+                padding: 0;
+                li {
+                    color: #000;
+                    font-size: $font-size-small;
+                    list-style-type: none;
+                    padding: $padding-base-vertical/2 $padding-base-horizontal $padding-base-vertical/2 $padding-base-horizontal*2;
+                }
+            }
+        }
+        > ul {
+            padding : 0;
+            li {
+              list-style-type: none;
+            }
         }
     }
 
