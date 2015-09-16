@@ -4,9 +4,13 @@
     display: inline-block;
     font-size: $font-size-h2;
     list-style: none;
-    .nav.nav-tabs & {
+    &.in-navbar {
         line-height: 40px;
         font-size: $font-size-large;
+        > a, > a:hover {
+              color: #fff;
+              text-transform: initial;
+        }
     }
 
     > a, > a:hover {
