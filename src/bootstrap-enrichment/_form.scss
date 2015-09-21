@@ -157,7 +157,7 @@ ul.form-radio-list {
             display: block;
             font-size: $font-size-large;
             font-weight: 300;
-            padding: 1px 0 1px $form-radio-list-itemPadding*2;
+            padding: 1px 0 1px ($form-radio-list-itemPadding + 0.8 * $form-radio-list-itemHeight);
             min-height: $form-radio-list-submenu-itemHeight;
             line-height: $form-radio-list-submenu-itemHeight - 2px;
             margin: 0;
@@ -169,7 +169,7 @@ ul.form-radio-list {
         }
         input:checked + label {
             position: relative;
-            padding: 0 0 0 ($form-radio-list-itemPadding*2-1);
+            padding: 0 0 0 ($form-radio-list-itemPadding + 0.8 * $form-radio-list-itemHeight);
             z-index: 1;
             background: $form-radio-list-submenu-gradient-color1;
             background: repeating-linear-gradient(to bottom right,
