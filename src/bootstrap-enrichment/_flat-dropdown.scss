@@ -3,6 +3,7 @@
     color: $gray-darker !important;
   }
   > a {
+    background: transparent !important;
     padding: 0;
     min-height: $navbar-height;
     line-height: $navbar-height;
@@ -42,7 +43,7 @@
         padding: 8px 15px;
         color: $gray-darker;
         &:hover {
-          background: $brand-primary-hover;
+          background: $brand-primary-active;
           color: #fff;
         }
       }
@@ -50,7 +51,7 @@
         color: #fff;
         background: $gray-darker;
         &:hover {
-          background: $brand-primary-hover;
+          background: $brand-primary-active;
           color: #fff;
         }
       }
