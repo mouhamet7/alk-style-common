@@ -1,52 +1,59 @@
-.nav {
-    text-transform: uppercase;
-}
-
 .navbar {
+    min-height: $navbar-height;
     .container-fluid {
         padding-left: 30px;
         padding-right: 30px;
     }
 
     .logo {
-        height: $font-size-h2;
+        height: $font-size-h3;
 
-        margin-top: ($navbar-height - $font-size-h2) / 2;
-        margin-bottom: ($navbar-height - $font-size-h2) / 2;
+        margin-top: ($navbar-height - $font-size-h3) / 2;
+        margin-bottom: ($navbar-height - $font-size-h3) / 2;
         margin-right: 2*$padding-base-horizontal;
 
         svg {
             width: inherit;
         }
     }
+    li.navbar-support {
+      margin-right: 10px;
+      line-height: $navbar-height;
+      a {
+        display: inline-block;
+        vertical-align: middle;
+        width: $font-size-base + 3px;
+        height: $font-size-base + 3px;
+        line-height: $font-size-base + 3px;
+        text-align: center;
+        padding: 0;
+        font-weight: 400;
+        border: 1px solid #dedede;
+        font-size: $font-size-base;
+        border-radius: 50%;
+        &:hover {
+          color: #fff;
+          border-color: #fff;
+        }
+      }
+    }
+    ul.navbar-nav:not(.navbar-right) {
+        > li:not(.dropdown) {
+            &:hover, &:active, &:focus, .active {
+                color: $brand-primary;
 
-    ul.navbar-nav:not(.dropdown-menu) {
-        li {
-            cursor: pointer;
-
-            &:not(.navbar-btn) {
-                &:hover, &:active, &:focus, .active {
+                > a {
                     color: $brand-primary;
-
-                    a {
-                        color: $brand-primary;
-                    }
-
-                    &:after {
-                        content: ' ';
-                        position: absolute;
-                        bottom: 0;
-                        left: 1px;
-                        right: 1px;
-                        height: 3px;
-                        background-color: $brand-primary;
-                    }
                 }
-            }
-            &.navbar-btn {
-                a {
-                    padding-bottom: 0;
-                    padding-top: 0;
+
+                &:after {
+                    content: ' ';
+                    position: absolute;
+                    bottom: 0;
+                    left: 1px;
+                    right: 1px;
+                    height: 3px;
+                    background-color: $brand-primary;
                 }
             }
         }
