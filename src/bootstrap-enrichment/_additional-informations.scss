@@ -5,11 +5,25 @@
     font-size: $font-size-h2;
     list-style: none;
     &.in-navbar {
+        width: 100%;
         line-height: 40px;
         font-size: $font-size-large;
         > a, > a:hover {
-              color: #fff;
-              text-transform: initial;
+            display: block;
+            width: 100%;
+            color: #fff;
+            text-transform: initial;
+            i {
+              position: absolute;
+              right: 10px;
+              height: 40px;
+              line-height: 40px;
+            }
+        }
+        .dropdown-menu {
+          top: 35px;
+          left: 0;
+          right: 0;
         }
     }
 
@@ -54,7 +68,6 @@
                 padding: 0;
                 li {
                     color: #000;
-                    font-size: $font-size-small;
                     list-style-type: none;
                     padding: $padding-base-vertical/2 $padding-base-horizontal $padding-base-vertical/2 $padding-base-horizontal*2;
                 }
