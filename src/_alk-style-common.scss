@@ -13,8 +13,8 @@ $mdi-font-path: "/styles/mdi/fonts";
 // Bootstrap
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
-
 @import "bootstrap-enrichment/additional-informations";
+@import "bootstrap-enrichment/alert";
 @import "bootstrap-enrichment/flat-dropdown";
 @import "bootstrap-enrichment/form";
 @import "bootstrap-enrichment/modals";

@@ -1,0 +1,19 @@
+.alert {
+  border-radius: 0;
+  border: 0;
+  &.alert-info {
+    padding-left: 0;
+    > span.mdi {
+      display: table-cell;
+      bottom: 10px;
+      font-size: 30px;
+      width: 60px;
+      vertical-align: middle;
+      text-align: center;
+    }
+    > p {
+      display: table-cell;
+    }
+    background: $gray-light;
+  }
+}
