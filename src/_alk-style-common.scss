@@ -44,6 +44,7 @@ $mdi-font-path: "/styles/mdi/fonts";
 @import "material-ui/datepicker";
 @import "_overrides-post-import";
 
+@import "alk-components/alk-authentication";
 @import "alk-components/alk-header";
 @import "alk-components/alk-side-filters";
 @import "alk-components/list-and-details";
