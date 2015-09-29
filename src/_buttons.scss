@@ -76,3 +76,39 @@
 .btn-inprogress {
     @include transparent-btn($brand-inprogress);
 }
+
+.btn-white {
+    @include transparent-btn($brand-white);
+}
+
+.alert-success {
+    .btn-white {
+        &:hover {
+            color: $alert-success-bg;
+        }
+    }
+}
+
+.alert-warning {
+    .btn-white {
+        &:hover {
+            color: $alert-warning-bg;
+        }
+    }
+}
+
+.alert-danger {
+    .btn-white {
+        &:hover {
+            color: $alert-danger-bg;
+        }
+    }
+}
+
+.alert-info {
+    .btn-white {
+        &:hover {
+            color: $alert-info-bg;
+        }
+    }
+}
