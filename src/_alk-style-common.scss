@@ -37,11 +37,13 @@ $mdi-font-path: "/styles/mdi/fonts";
 @import "user/login/login";
 @import "browsehappy";
 
+@import "material-ui/autocomplete";
 @import "material-ui/main";
 @import "material-ui/fab";
 @import "material-ui/inputs";
 @import "material-ui/shadow";
 @import "material-ui/datepicker";
+@import "material-ui/chips";
 @import "_overrides-post-import";
 
 @import "alk-components/alk-authentication";

@@ -1,0 +1,86 @@
+md-autocomplete {
+    background: transparent;
+
+    md-autocomplete-wrap {
+        input:not(.md-input) {
+            border-bottom: 1px solid $input-border-color;
+            padding: 0;
+            padding-right: 25px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+ 
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translate3d(0,-50%,0) scale(.9);
+            right: 0;
+        }
+    }
+}
+
+.md-autocomplete-suggestions-container {
+    // header defined as fixed so we need to add some margin for the positioning
+    margin-top: $navbar-height;
+}
+
+.md-virtual-repeat-container .md-virtual-repeat-scroller {
+    margin: 0 !important;
+}
+
+[alk-autocomplete-my], [alk-autocomplete] {
+    &.form-control {
+        border-bottom: none;
+    }
+}
+
+body {
+    .md-scroll-mask {
+        position: initial
+    }
+}
+
+.md-visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    text-transform: none;
+    width: 1px;
+}
+
+.md-scroll-mask {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    > .md-scroll-mask-bar {
+        display: block;
+        position: absolute;
+        background-color: #fafafa;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 65;
+        box-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.md-virtual-repeat-container .md-virtual-repeat-scroller {
+    margin-top: $navbar-height;
+}
+
+.md-autocomplete-suggestions-container {
+  li {
+    .highlight {
+      color: $brand-primary;
+    }
+  }
+}
