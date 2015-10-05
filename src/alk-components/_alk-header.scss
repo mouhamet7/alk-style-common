@@ -70,13 +70,18 @@
     .actions {
         background-color: $brand-primary;
         color: white;
-        height: 50px;
-        line-height: 50px;
+        height: 30px;
+        line-height: 30px;
         vertical-align: middle;
+
+        > .col-xs-12 {
+            padding-left: 30px;
+        }
 
         .action {
             color: white;
-            font-size: 30px;
+            display: inline;
+            font-size: $font-size-h4;
         }
     }
 }
