@@ -23,6 +23,7 @@ $brand-danger-light:    lighten($brand-danger, 5%) !default;
 
 $body-bg:               $gray-lighter !default;
 $text-color:            $gray-dark !default;
+$text-color-disabled:   $gray-light;
 $darkbg-text:           $text-color;
 $lightbg-text:          $text-color;
 $radio-default:         $brand-primary;
@@ -586,7 +587,6 @@ $label-danger-bg:             $brand-danger;
 $label-color:                 #fff;
 //** Default text color of a linked label
 $label-link-hover-color:      #fff;
-
 
 //== Modals
 //
