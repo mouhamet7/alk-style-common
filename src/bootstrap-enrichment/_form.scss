@@ -89,6 +89,17 @@ input[type="checkbox"].form-checkbox {
             @include form-checkbox-color(#fff);
         }
     }
+
+    /* disabled layout */
+    &.disabled + label {
+        color: $text-color-disabled;
+        &:before {
+            @include form-checkbox-color($input-border-color-disabled);
+        }
+        &:after {
+            @include form-checkbox-color($input-border-color-disabled);
+        }
+    }
 }
 
 /** Input styles with an adjacent label
@@ -121,6 +132,17 @@ input[type="radio"].form-radio {
         }
         &:after {
             @include form-checkbox-color(#fff);
+        }
+    }
+
+    /* disabled layout */
+    &.disabled + label {
+        color: $text-color-disabled;
+        &:before {
+            @include form-checkbox-color($input-border-color-disabled);
+        }
+        &:after {
+            @include form-checkbox-color($input-border-color-disabled);
         }
     }
 }
