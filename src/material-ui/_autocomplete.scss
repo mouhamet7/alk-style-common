@@ -10,7 +10,7 @@ md-autocomplete {
             white-space: nowrap;
             overflow: hidden;
         }
- 
+
         button {
             position: absolute;
             top: 50%;
@@ -84,10 +84,21 @@ body {
     }
 
     .md-autocomplete-suggestions-container {
-      li {
-        .highlight {
-          color: $brand-primary;
+        li {
+            padding: 6px 12px;
+            line-height: 17px;
+            min-height: 24px;
+            height: initial;
+            white-space: normal;
+            text-overflow: initial;
+
+            &:first-of-type {
+                margin-top: 6px;
+            }
+
+            .highlight {
+                color: $brand-primary;
+            }
         }
-      }
     }
 }
