@@ -68,6 +68,7 @@
     }
 
     .actions {
+        @extend .basic-shadow;
         background-color: $brand-primary;
         color: white;
         line-height: 48px;
