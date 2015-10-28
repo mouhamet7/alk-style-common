@@ -58,7 +58,6 @@
 }
 
 select, .input-group select, .input-group select.form-control, .form-inline select, .select2-container .select2-choice {
-    padding: 0;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -66,8 +65,9 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     background: url(../images/icons/chevron-down.png) no-repeat right transparent !important;
     line-height: 1;
     min-width: 40px;
-
+    padding: 0;
     padding-right: 30px;
+
     &:focus {
         padding-right: 30px;
         background: url(../images/icons/chevron-down.png) no-repeat right transparent;
@@ -98,20 +98,22 @@ select, .input-group select, .input-group select.form-control, .form-inline sele
     }
 }
 
-fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-control {
-    &, &:focus, &.focus {
-        &:not(textarea) {
-            height: 28px;
-        }
-        padding: 0;
-        float: none;
-        border: 0;
-        box-shadow: none;
-        border-radius: 0;
-        background: transparent;
-        border-bottom: 1px solid $input-border-color;
-        &:disabled {
-            border-style: dashed;
+body {
+    fieldset[disabled] .form-control, .form-control-wrapper .form-control, .form-control {
+        &, &:focus, &.focus {
+            &:not(textarea) {
+                height: $input-height-base;
+            }
+            padding: 0;
+            float: none;
+            border: 0;
+            box-shadow: none;
+            border-radius: 0;
+            background: transparent;
+            border-bottom: 1px solid $input-border-color;
+            &:disabled {
+                border-style: dashed;
+            }
         }
     }
 }
