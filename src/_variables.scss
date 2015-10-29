@@ -217,11 +217,11 @@ $input-border-focus:             $brand-primary;
 $input-color-placeholder:        $gray-light;
 
 //** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
+$input-height-base:              40px; // ($line-height-computed + ($padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
-$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
+$input-height-large:             40px; // (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
-$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
+$input-height-small:             40px ; // (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
 
 $legend-color:                   $gray-dark;
 $legend-border-color:            #e5e5e5;
