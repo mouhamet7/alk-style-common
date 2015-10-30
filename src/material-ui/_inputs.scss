@@ -121,3 +121,14 @@ body {
 .radio label span {
   position: relative;
 }
+
+[text-angular] {
+    .ta-scroll-window > .ta-bind {
+        padding-top: 20px;
+    }
+
+    .placeholder-text:before {
+        color: $input-color-placeholder;
+        margin-left: - $padding-base-horizontal;
+    }
+}
