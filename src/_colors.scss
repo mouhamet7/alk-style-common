@@ -33,8 +33,8 @@ $brand-inprogress:      #C69C5D;
 $brand-highlight:       #FABF2D;
 $brand-highlight-secondary: #EF7E1D;
 
-$brand-primary-hover:     #d9ecf0;
-$brand-primary-btn-hover: #3e8e9a;
+$brand-primary-hover:     #3e8e9a;
+$brand-primary-btn-hover: $brand-primary-hover;
 $brand-primary-active:    #8cc7d1;
 
 $brand-secondary-hover:   #d0e1e6;
@@ -42,6 +42,16 @@ $brand-success-hover:     #daefe3;
 $brand-danger-hover:      #fadbd9;
 $brand-warning-hover:     $brand-danger-hover;
 $brand-default-hover:     #d8d8d8;
+
+$brand-primary-disabled:     #bcd7de;
+$brand-secondary-disabled:   #a8b8c5;
+$brand-success-disabled:     #c0ddc6;
+$brand-danger-disabled:      #f6beb7;
+$brand-warning-disabled:     $brand-danger-disabled;
+$brand-inprogress-disabled:  #ebdcc6;
+$brand-highlight-disabled:  #fee5b3;
+$brand-highlight-secondary-disabled:  #f9cda9;
+$brand-default-disabled:     #979493;
 
 $brand-white:             #FFFFFF;
 
