@@ -71,7 +71,7 @@
         @extend .basic-shadow;
         background-color: $brand-primary;
         color: white;
-        line-height: 48px;
+        line-height: $navbar-action-height;
         vertical-align: middle;
 
         > .col-xs-12 {
