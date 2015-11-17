@@ -12,7 +12,7 @@
         position: relative;
         @extend .lateral-shadow;
         min-height: 100%;
-        > div > form {
+        > form {
             padding: 30px 0;
         }
     }
