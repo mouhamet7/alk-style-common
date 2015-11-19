@@ -97,22 +97,19 @@ body {
     }
 
     .md-autocomplete-suggestions-container {
-        li {
-            padding: 6px 12px;
-            line-height: 17px;
-            min-height: 24px;
-            height: initial;
-            white-space: normal;
-            text-overflow: initial;
-            width: 100%;
+        .md-autocomplete-suggestions {
+            li {
+                padding: 6px 12px;
+                line-height: 17px;
+                min-height: 24px;
+                height: initial;
+                white-space: normal;
+                text-overflow: initial;
+                width: 100%;
 
-            &:first-of-type {
-                margin-top: 6px;
-            }
-
-
-            .highlight {
-                color: $brand-primary;
+                .highlight {
+                    color: $brand-primary;
+                }
             }
         }
     }
