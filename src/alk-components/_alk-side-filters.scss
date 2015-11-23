@@ -50,6 +50,11 @@
                 margin-right: -30px;
 
                 li {
+                    .alk-icon svg {
+                        width: 25px;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
                     > label {
                       cursor: pointer;
                       font-size: $font-size-base;
