@@ -82,9 +82,14 @@
                             color: $alk-certified;
                         }
                     }
-                    &.discontinued {
+                    &.archived {
                         .fa, .count {
                             color: $gray-light;
+                        }
+                    }
+                    &.discontinued {
+                        .fa, .count {
+                            color: $gray;
                         }
                     }
 
