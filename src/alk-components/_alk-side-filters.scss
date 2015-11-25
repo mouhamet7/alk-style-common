@@ -58,33 +58,30 @@
                     > label {
                       cursor: pointer;
                       font-size: $font-size-base;
-                      > .fa {
-                          font-size: 20px;
-                          width: 20px;
-                      }
-                    }
-                    .fa-stack {
-                        font-size: 10px;
-                        width: 20px;
                     }
                     &.attributed {
-                        .fa, .count {
+                        .count {
                             color: $alk-attributed;
                         }
                     }
                     &.accepted {
-                        .fa, .count {
+                        .count {
                             color: $alk-accepted;
                         }
                     }
                     &.certified {
-                        .fa, .count {
+                        .count {
                             color: $alk-certified;
                         }
                     }
-                    &.discontinued {
-                        .fa, .count {
+                    &.archived {
+                        .count {
                             color: $gray-light;
+                        }
+                    }
+                    &.discontinued {
+                        .count {
+                            color: $gray;
                         }
                     }
 
