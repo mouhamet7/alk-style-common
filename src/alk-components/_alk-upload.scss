@@ -1,3 +1,12 @@
 .media-selection + .media-selection {
     margin-top: $padding-large-vertical;
 }
+
+.media-upload-box {
+    .progress {
+        float: left;
+        width: 88%;
+        margin-bottom: 0;
+        margin-top: 7px;
+    }
+}
