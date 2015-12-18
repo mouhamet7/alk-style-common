@@ -1,5 +1,5 @@
 {
-  "name": "alk-style-common",
+  "name": "@alkem/alk-style-common",
   "version": "1.0.0",
   "description": "style-common ============",
   "main": "index.js",
