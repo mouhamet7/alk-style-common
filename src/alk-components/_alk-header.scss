@@ -19,7 +19,7 @@
                         overflow: hidden;
 
                         &:after {
-                            @include rotate(45deg);
+                            transform: rotate(45deg);
                             content: ' ';
                             position: absolute;
                             bottom: -7px;

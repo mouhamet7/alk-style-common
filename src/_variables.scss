@@ -71,21 +71,21 @@ $font-family-serif:       "Roboto Slab", "Roboto", Georgia, "Times New Roman", T
 $font-family-monospace:   "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          14px;
-$font-size-large:         16px;
-$font-size-small:         12px;
+$font-size-base:          0.875rem;
+$font-size-large:         1rem;
+$font-size-small:         0.75rem;
 
-$font-size-h1:            32px;
-$font-size-h2:            26px;
-$font-size-h3:            22px;
-$font-size-h4:            16px;
+$font-size-h1:            2rem;
+$font-size-h2:            1.625rem;
+$font-size-h3:            1.375rem;
+$font-size-h4:            1rem;
 $font-size-h5:            $font-size-base;
-$font-size-h6:            12px;
+$font-size-h6:            0.75rem;
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+$line-height-computed:    2rem; // ~20px
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    inherit;
@@ -370,8 +370,8 @@ $container-lg:                 $container-large-desktop;
 //##
 
 // Basics of a navbar
-$navbar-height:                    40px;
-$navbar-action-height:             48px;
+$navbar-height:                    2.5rem;
+$navbar-action-height:             3rem;
 $navbar-margin-bottom:             $line-height-computed;
 $navbar-border-radius:             $border-radius-base;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2));

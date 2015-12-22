@@ -11,7 +11,7 @@
         right: -15px;
         top: 6px;
         content: "beta";
-        @include rotate(45deg);
+        transform: rotate(45deg);
         color: #fff;
         background: $brand-secondary;
         width: 50px;
