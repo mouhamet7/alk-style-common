@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.row-same-height {
+  width: 100%;
+  align-items: stretch;
+}
+
 .no-padding-left {
   padding-left: 0 !important;
 }

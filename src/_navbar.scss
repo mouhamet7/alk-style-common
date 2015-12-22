@@ -1,6 +1,5 @@
 .navbar {
     padding: 0 $grid-gutter-width;
-    line-height: 2.5rem;
     &.bg-inverse {
         background: $navbar-inverse-bg;
         color: $navbar-inverse-color;
@@ -44,7 +43,8 @@
         }
       }
     }
-    ul.navbar-nav:not(.navbar-right) {
+    ul.navbar-nav:not(.pull-xs-right) {
+        line-height: $navbar-height;
         > li.nav-item:not(.dropdown) {
           position: relative;
           padding: 0 1rem;
