@@ -11,7 +11,7 @@ $mdi-font-path: "/styles/mdi/fonts";
 @import "variables";
 
 // Bootstrap
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "bootstrap/scss/bootstrap-flex.scss";
 
 @import "bootstrap-enrichment/additional-informations";
 @import "bootstrap-enrichment/alert";

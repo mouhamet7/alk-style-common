@@ -7,7 +7,7 @@
 }
 
 .has-error {
-    @include form-control-validation($brand-danger, $brand-danger, transparent);
+    @include form-control-validation($brand-danger);
     .form-control {
         border-color: $brand-danger;
     }
@@ -18,7 +18,7 @@
 }
 
 .has-warning {
-    @include form-control-validation($brand-warning, $brand-warning, transparent);
+    @include form-control-validation($brand-warning);
 
     .form-control {
         border-color: $input-border-color;
@@ -34,7 +34,7 @@
 }
 
 .has-success {
-    @include form-control-validation($brand-success, $brand-success, transparent);
+    @include form-control-validation($brand-success);
 
     .form-control {
         border-color: $input-border-color;

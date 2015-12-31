@@ -1,12 +1,10 @@
 $padding-box-tile: $padding-base-horizontal;
 
 .basic-shadow {
-  behavior: url(src/common/css3pie/PIE.htc);
   box-shadow: 0 0 2px rgba(0,0,0,.12);
 }
 
 .btn-shadow {
-  behavior: url(src/common/css3pie/PIE.htc);
   box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
 }
 
