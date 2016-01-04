@@ -59,4 +59,21 @@
 			}
 		}
 	}
+
+    .btn-info {  
+        background-color: $brand-primary;
+        color: white;
+        &:focus,&:hover {
+            background-color: $brand-primary;
+            color: white;
+            border-color: $brand-primary;
+        }
+    }
+
+    .btn-default:hover {
+        background-color: $brand-primary;
+        color: white;
+        border-color: $brand-primary;
+    }
+
 }
