@@ -67,10 +67,6 @@
             bottom: 0;
 
             form, .content {
-                @include make-xs-column(10);
-                @include make-xs-column-offset(1);
-                @include make-sm-column(4);
-                @include make-sm-column-offset(4);
                 margin-top: $padding-large-horizontal;
             }
         }
