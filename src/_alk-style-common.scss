@@ -1,9 +1,9 @@
 // Font Awesome
-$fa-font-path: "/styles/font-awesome/fonts";
+$fa-font-path: "font-awesome/fonts" !default;
 @import "font-awesome/scss/font-awesome";
 
 // Material design icons
-$mdi-font-path: "/styles/mdi/fonts";
+$mdi-font-path: "mdi/fonts" !default;
 @import "mdi/scss/materialdesignicons.scss";
 
 // Bootstrap overriding
