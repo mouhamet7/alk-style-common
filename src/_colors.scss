@@ -32,7 +32,7 @@ $brand-inprogress:      #C69C5D;
 $brand-highlight:       #FABF2D;
 $brand-highlight-secondary: #EF7E1D;
 
-$brand-primary-hover:     #d9ecf0;
+$brand-primary-hover:     $brand-secondary;
 $brand-primary-btn-hover: #3e8e9a; // $brand-primary-hover;
 $brand-primary-active:    #8cc7d1;
 
@@ -62,6 +62,8 @@ $brand-primary-40:      rgba($brand-primary, .4);
 $brand-brillant:        rgb(255, 255, 0);
 $brand-deprecated:      rgb(165, 154, 103);
 $brand-stream:          $brand-primary;
+
+$alk-background-hover: #d9ecf0;
 
 $alk-total: $brand-primary;
 $alk-certified: $brand-success;
