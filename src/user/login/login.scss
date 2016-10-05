@@ -72,3 +72,31 @@
         }
     }
 }
+
+#login-new {
+    background: url('/images/signup-background.jpg') fixed top center;
+    &.full-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1049;
+        height: 100%;
+        width: 100%;
+    }
+    .login-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card {
+      margin-top: 60px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 0;
+    }
+    .login-header {
+      padding-top: 90px;
+      text-align: center;
+    }
+}
