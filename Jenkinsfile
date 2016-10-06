@@ -26,7 +26,7 @@ timestamps{
         }
 
         stage('Publish'){
-            nodejs.publish(repo_slug)
+            nodejs.publish_release(utils, repo_slug)
         }
         stage("Finalisation"){
             utils.notifyGithub(repo_slug, git_commit, utils.state_success)
